@@ -13,7 +13,7 @@ let altura = 1.71 // Decimal
 let esEstudiante = true
 let esDesarrollador = false
 
-// Sin defenir (variable sin definir)
+// Sin defenir (undefined)
 let valorSinDefinir
 console.log(valorSinDefinir)
 
@@ -22,7 +22,9 @@ console.log(valorSinDefinir)
 let valorNulo = null
 
 // Simbolo (Symbol)
-// Se usa habitualmente para identificar valores únicos
+// Se usa habitualmente para identificar valores únicos.
+// Es un tipo de dato primitivo introducido en ECMAScript 2015 (ES6).
+// Cada Symbol() creado es único, incluso si tienen la misma descripción.
 let miSimbolo = Symbol("misimbolo")
 
 // Número entero grande (BigInt)
@@ -43,6 +45,7 @@ console.log(typeof esDesarrollador)
 console.log(typeof valorSinDefinir)
 
 // Cuando se le hace el typeof nos damos cuenta que null es un objeto
+// Imprimirá "object" (un error histórico en JavaScript)
 console.log(typeof valorNulo)
 
 console.log(typeof miSimbolo)
