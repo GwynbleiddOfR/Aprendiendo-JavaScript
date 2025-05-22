@@ -7,21 +7,21 @@
 // pero la asignación del valor se queda donde está en el código. Por eso a veces
 // puedes usar una variable 'var' antes de declararla (aparecerá como 'undefined').
 /*
-    Casos específicos para usar 'var':
+Casos específicos para usar 'var':
     - Mantener compatibilidad con código JavaScript muy antiguo.
     - Patrones específicos que históricamente se basaban en el ámbito de función de 'var' (menos comunes hoy en día).
 
-    Ventajas de 'var' (en contextos muy específicos):
+Ventajas de 'var' (en contextos muy específicos):
     - Su ámbito de función a veces era intencional en patrones antiguos.
     - La redeclaración podía ser útil en ciertos escenarios (aunque también propensa a errores).
 
-    Desventajas de 'var' (razones por las que se prefiere let/const):
+Desventajas de 'var' (razones por las que se prefiere let/const):
     - Ámbito de función confuso y propenso a errores (especialmente en bloques if/for).
     Hoisting puede llevar a comportamientos inesperados si no se entiende bien.
     - Permite la redeclaración, lo que puede ocultar errores y dificultar el seguimiento del código.
 
-    En código moderno, generalmente se recomienda usar 'let' y 'const' en lugar de 'var' para un código más 
-    claro y seguro.
+En código moderno, generalmente se recomienda usar 'let' y 'const' en lugar de 'var' para un código más 
+claro y seguro.
 */
 var holaMundo = "¡Hola, JavaScript!";
 var holaMundo = "¡Hola, JavaScript!"
@@ -46,8 +46,8 @@ Desventajas de 'let':
     ámbito de función y la redeclaración de 'var'. Sin embargo, estos patrones son menos comunes en el desarrollo 
     moderno.
 
-    En general, 'let' es preferible a 'var' para declarar variables que pueden ser reasignadas en código JavaScript
-    moderno.
+En general, 'let' es preferible a 'var' para declarar variables que pueden ser reasignadas en código JavaScript
+moderno.
 */
 let holaMundo2 = "¡Hola, JavaScript 2!"
 console.log(holaMundo2)
@@ -78,8 +78,8 @@ Desventajas de 'const':
     - No permite la reasignación, lo que puede requerir un enfoque diferente si necesitas que un valor cambie (en 
     ese caso, usar 'let').
 
-    En general, se recomienda usar 'const' por defecto para las variables que no necesitan ser reasignadas. Si se 
-    necesita reasignación, entonces se usa 'let'.
+En general, se recomienda usar 'const' por defecto para las variables que no necesitan ser reasignadas. Si se 
+necesita reasignación, entonces se usa 'let'.
 */
 const holaMundo3 = "¡Hola, JavaScript 3!"
 console.log(holaMundo3)
